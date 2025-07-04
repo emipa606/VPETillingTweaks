@@ -7,7 +7,7 @@ using Verse;
 namespace VPETillingTweaks;
 
 [HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.GetGizmos))]
-public static class AutoTillGizmo
+public static class Zone_Growing_GetGizmos
 {
     public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Zone_Growing __instance)
     {
@@ -32,7 +32,7 @@ public static class AutoTillGizmo
         {
             defaultLabel = "VTT.AllowTilling".Translate(),
             defaultDesc = "VTT.AllowTillingTT".Translate(),
-            icon = VPETillingTweaksPatcher.VPETillIcon,
+            icon = VPETillingTweaksPatcher.VpeTillIcon,
             isActive = () => isActive,
             toggleAction = delegate
             {

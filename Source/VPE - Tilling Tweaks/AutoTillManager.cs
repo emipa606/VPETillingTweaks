@@ -22,7 +22,7 @@ public class AutoTillManager(Map map) : MapComponent(map)
         }
 
         activeAutoTillZones.Add(zone);
-        TillZone(zone);
+        tillZone(zone);
     }
 
     public override void ExposeData()
@@ -40,11 +40,11 @@ public class AutoTillManager(Map map) : MapComponent(map)
 
         foreach (var zone in activeAutoTillZones)
         {
-            TillZone(zone);
+            tillZone(zone);
         }
     }
 
-    private void TillZone(Zone_Growing zone)
+    private void tillZone(Zone_Growing zone)
     {
         foreach (var center in zone.Cells)
         {

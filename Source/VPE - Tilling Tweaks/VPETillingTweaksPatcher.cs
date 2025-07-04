@@ -8,7 +8,7 @@ namespace VPETillingTweaks;
 [StaticConstructorOnStartup]
 public static class VPETillingTweaksPatcher
 {
-    public static readonly Texture2D VPETillIcon = ContentFinder<Texture2D>.Get("UI/VCE_Plow", false);
+    public static readonly Texture2D VpeTillIcon = ContentFinder<Texture2D>.Get("UI/VCE_Plow", false);
 
     static VPETillingTweaksPatcher()
     {

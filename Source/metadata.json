@@ -4,5 +4,11 @@
   "CanRemove": "0",
   "SocialImageSet": true,
   "SearchTags": " tweaks",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "LastXmlCleaning": "2025-07-05T00:26:24.6000838+02:00",
+  "Patches": true,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 5344.0,
+  "LinesOfXML": 1028.0
 }
